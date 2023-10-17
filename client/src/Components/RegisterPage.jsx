@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
 
-export default function LoginPage() {
+export default function RegisterPage() {
   return (
     <div className="mt-4 grow flex items-center justify-around">
       <div className="mb-64">
-        <h1 className="text-4xl text-center mb-4">Login</h1>
+        <h1 className="text-4xl text-center mb-4">Register</h1>
         <form className="max-w-md mx-auto">
+          <input type="text" placeholder="John Doe" />
           <input type="email" placeholder="enter your email" />
           <input type="password" placeholder="password" />
           <button className="primary">Login</button>
           <div className="text-center py-2 text-gray-500">
-            Don't have an account ?{" "}
-            <Link to={"/register"} className="underline text-black">
+            Already have an account ?{" "}
+            <Link to={"/login"} className="underline text-black">
               {" "}
-              Register now
+              Sign in now
             </Link>
           </div>
         </form>
