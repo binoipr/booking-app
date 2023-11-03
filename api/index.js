@@ -47,7 +47,7 @@ try {
         if(pwdOk) {
             jwt.sign({email: userDoc.email, id: userDoc._id}, jwtSecret, {}, (error, token)=> {
                 if(error) throw error;
-                res.cookie("token", token).json("password ok")
+                res.cookie("token", token).json(userDoc);
             } )
             
         } else {
