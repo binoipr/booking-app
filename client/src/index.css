@@ -11,6 +11,6 @@ button {
 }
 
 button.primary {
-    background-color: #F5385D;
+    background-color: #ec3157;
     @apply bg-primary py-2 w-full text-white rounded-2xl;
 }
